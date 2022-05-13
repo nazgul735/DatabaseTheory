@@ -18,6 +18,22 @@ def calculateBlockAtFirstLevel(entityByte, blockByte, blockSize, fillDegree,calc
     print("")
     print("------------------")
 
+def nestedLoopJoin(postAmount1, blocks1, postAmount2, blocks2, bufferBlocks):
+    return blocks1+((blocks1/(bufferBlocks-2))*blocks2)
+
+
+
+
+postAmount1=47000
+blocks1=800
+postAmount2=500000
+blocks2=12800
+bufferBlocks=34
+
+print(f" there's {nestedLoopJoin(postAmount1, blocks1, postAmount2, blocks2, bufferBlocks)} accesses for the nesten loop")
+print("")
+print("-------------")
+
 
 
 fillDegree=2/3
